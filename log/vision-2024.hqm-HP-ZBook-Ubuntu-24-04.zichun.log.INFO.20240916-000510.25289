@@ -1,0 +1,59 @@
+Log file created at: 2024/09/16 00:05:10
+Running on machine: hqm-HP-ZBook-Ubuntu-24-04
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20240916 00:05:10.625535 25289 reader-file.cpp:111] Initialized file video source.
+W20240916 00:05:10.625761 25289 core-base.cpp:20] Waiting for the first frame frome video.
+I20240916 00:05:11.625948 25289 core-base.cpp:23] Reader is initialized successfully.
+I20240916 00:05:11.626076 25289 core-base.cpp:32] Writer do not need initialization.
+I20240916 00:05:11.626183 25289 core-base.cpp:92] Serial is initialized successfully.
+I20240916 00:05:11.628230 25289 core-base.cpp:115] Solver is initialized successfully.
+E20240916 00:05:12.686906 25289 viewer-video.cpp:115] Failed to run python script, please check web log.
+E20240916 00:05:12.687528 25289 viewer-video.cpp:116] LOG:
+E20240916 00:05:12.687561 25289 viewer-video.cpp:117] [2024-09-16 00:05:11 +0800] [25312] [INFO] Starting gunicorn 23.0.0
+[2024-09-16 00:05:11 +0800] [25312] [ERROR] Connection in use: ('0.0.0.0', 9003)
+[2024-09-16 00:05:11 +0800] [25312] [ERROR] connection to ('0.0.0.0', 9003) failed: [Errno 98] Address already in use
+E20240916 00:05:12.687644 25289 autoaim-base.cpp:17] Failed to initialize viewer.
+I20240916 00:05:12.688458 25289 tensorrt.cpp:90] Engine will be built from onnx.
+I20240916 00:05:14.196130 25289 cuda-help.h:42] [MemUsageChange] Init CUDA: CPU +14, GPU +0, now: CPU 143, GPU 91 (MiB)
+I20240916 00:05:18.780294 25289 cuda-help.h:42] [MemUsageChange] Init builder kernel library: CPU +1444, GPU +268, now: CPU 1664, GPU 359 (MiB)
+I20240916 00:05:18.818275 25289 cuda-help.h:42] ----------------------------------------------------------------
+I20240916 00:05:18.818300 25289 cuda-help.h:42] Input filename:   ../assets/models/armor.onnx
+I20240916 00:05:18.818308 25289 cuda-help.h:42] ONNX IR version:  0.0.8
+I20240916 00:05:18.818313 25289 cuda-help.h:42] Opset version:    17
+I20240916 00:05:18.818316 25289 cuda-help.h:42] Producer name:    pytorch
+I20240916 00:05:18.818320 25289 cuda-help.h:42] Producer version: 2.0.0
+I20240916 00:05:18.818321 25289 cuda-help.h:42] Domain:           
+I20240916 00:05:18.818323 25289 cuda-help.h:42] Model version:    0
+I20240916 00:05:18.818331 25289 cuda-help.h:42] Doc string:       
+I20240916 00:05:18.818334 25289 cuda-help.h:42] ----------------------------------------------------------------
+W20240916 00:05:18.854976 25289 cuda-help.h:40] onnx2trt_utils.cpp:374: Your ONNX model has been generated with INT64 weights, while TensorRT does not natively support INT64. Attempting to cast down to INT32.
+W20240916 00:05:18.855046 25289 cuda-help.h:40] onnx2trt_utils.cpp:400: One or more weights outside the range of INT32 was clamped
+I20240916 00:05:18.861526 25289 tensorrt.cpp:97] Platform supports fp16, fp16 is enabled.
+I20240916 00:05:18.862321 25289 tensorrt.cpp:105] GPU memory total: 5907MB, free: 5548MB.
+I20240916 00:05:18.862331 25289 tensorrt.cpp:106] Max workspace size will use all of free GPU memory.
+I20240916 00:05:18.892508 25289 cuda-help.h:42] Graph optimization time: 0.02582 seconds.
+I20240916 00:05:18.893443 25289 cuda-help.h:42] Local timing cache in use. Profiling results in this builder pass will not be stored.
+I20240916 00:08:46.273898 25289 cuda-help.h:42] Detected 1 inputs and 1 output network tensors.
+I20240916 00:08:46.445422 25289 cuda-help.h:42] Total Host Persistent Memory: 393504
+I20240916 00:08:46.445441 25289 cuda-help.h:42] Total Device Persistent Memory: 2048
+I20240916 00:08:46.445443 25289 cuda-help.h:42] Total Scratch Memory: 336384
+I20240916 00:08:46.445446 25289 cuda-help.h:42] [MemUsageStats] Peak memory usage of TRT CPU/GPU memory allocators: CPU 28 MiB, GPU 181 MiB
+I20240916 00:08:46.445472 25289 cuda-help.h:42] [BlockAssignment] Started assigning block shifts. This will take 129 steps to complete.
+I20240916 00:08:46.455257 25289 cuda-help.h:42] [BlockAssignment] Algorithm ShiftNTopDown took 9.77963ms to assign 10 blocks to 129 nodes requiring 17662464 bytes.
+I20240916 00:08:46.455289 25289 cuda-help.h:42] Total Activation Memory: 17662464
+W20240916 00:08:46.552129 25289 cuda-help.h:40] TensorRT encountered issues when converting weights between types and that could affect accuracy.
+W20240916 00:08:46.552182 25289 cuda-help.h:40] If this is not the desired behavior, please modify the weights or retrain with regularization to adjust the magnitude of the weights.
+W20240916 00:08:46.552189 25289 cuda-help.h:40] Check verbose logs for the list of affected weights.
+W20240916 00:08:46.552194 25289 cuda-help.h:40] - 60 weights are affected by this issue: Detected subnormal FP16 values.
+W20240916 00:08:46.552222 25289 cuda-help.h:40] - 2 weights are affected by this issue: Detected values less than smallest positive FP16 subnormal value and converted them to the FP16 minimum subnormalized value.
+I20240916 00:08:46.554546 25289 cuda-help.h:42] [MemUsageChange] TensorRT-managed allocation in building engine: CPU +22, GPU +22, now: CPU 22, GPU 22 (MiB)
+I20240916 00:08:46.598117 25289 tensorrt.cpp:114] File has be written into cache.
+I20240916 00:08:46.793795 25289 tensorrt.cpp:118] Engine will be built from cache.
+I20240916 00:08:46.802700 25289 cuda-help.h:42] Loaded engine size: 24 MiB
+I20240916 00:08:46.832772 25289 cuda-help.h:42] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +21, now: CPU 0, GPU 21 (MiB)
+I20240916 00:08:46.835697 25289 cuda-help.h:42] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +17, now: CPU 0, GPU 38 (MiB)
+E20240916 00:08:46.838086 25289 autoaim-armor.cpp:15] Failed to initialize autoaim for armor.
+E20240916 00:08:46.838129 25289 core-base.cpp:131] Failed to initialize autoaim.
+E20240916 00:08:46.838141 25289 core-base.cpp:164] Failed to initialize base core because of autoaim part.
+E20240916 00:08:46.838148 25289 main.cpp:32] Failed to initialize core.

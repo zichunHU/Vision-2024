@@ -1,0 +1,39 @@
+Log file created at: 2024/09/08 19:30:53
+Running on machine: lhy-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0908 19:30:53.510744 11294 reader-file.cpp:111] Initialized file video source.
+W0908 19:30:53.510977 11294 core-base.cpp:20] Waiting for the first frame frome video.
+I0908 19:30:54.511186 11294 core-base.cpp:23] Reader is initialized successfully.
+I0908 19:30:54.511220 11294 core-base.cpp:32] Writer do not need initialization.
+I0908 19:30:54.511273 11294 core-base.cpp:92] Serial is initialized successfully.
+I0908 19:30:54.517712 11294 core-base.cpp:115] Solver is initialized successfully.
+I0908 19:30:55.768348 11294 autoaim-base.cpp:20] Viewer is initialized successfully.
+I0908 19:30:55.774072 11294 tensorrt.cpp:118] Engine will be built from cache.
+I0908 19:30:56.415506 11294 cuda-help.h:42] Loaded engine size: 25 MiB
+I0908 19:30:56.470104 11294 cuda-help.h:42] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +21, now: CPU 0, GPU 21 (MiB)
+I0908 19:30:56.482570 11294 cuda-help.h:42] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +17, now: CPU 0, GPU 38 (MiB)
+I0908 19:30:56.487159 11294 core-base.cpp:135] Autoaim is initialized successfully.
+I0908 19:30:56.487176 11294 core-base.cpp:168] Successfully initialized base environment of standard_3 controller.
+I0908 19:30:56.487205 11294 core-mono.cpp:26] 0.507757
+W0908 19:30:56.487565 11294 core-mono.cpp:64] No sync data found.
+W0908 19:30:56.520476 11294 core-mono.cpp:66] The problem of no sync data found has been solved.
+I0908 19:30:57.544919 11294 core-mono.cpp:26] 95.2599
+I0908 19:30:58.600626 11294 core-mono.cpp:26] 97.0219
+I0908 19:30:59.657613 11294 core-mono.cpp:26] 93.6941
+I0908 19:31:00.718322 11294 core-mono.cpp:26] 93.8705
+I0908 19:31:01.782585 11294 core-mono.cpp:26] 98.7256
+I0908 19:31:02.853561 11294 core-mono.cpp:26] 91.799
+I0908 19:31:03.921219 11294 core-mono.cpp:26] 91.5734
+I0908 19:31:04.968982 11294 core-mono.cpp:26] 92.2025
+I0908 19:31:06.037447 11294 core-mono.cpp:26] 90.8164
+I0908 19:31:07.094936 11294 core-mono.cpp:26] 99.3656
+I0908 19:31:08.161023 11294 core-mono.cpp:26] 90.9394
+I0908 19:31:09.215672 11294 core-mono.cpp:26] 91.81
+I0908 19:31:10.277138 11294 core-mono.cpp:26] 92.3851
+I0908 19:31:11.339751 11294 core-mono.cpp:26] 96.8219
+I0908 19:31:12.400895 11294 core-mono.cpp:26] 90.367
+W0908 19:31:13.016609 11294 core-mono.cpp:46] Waiting to get valid data.
+I0908 19:31:13.459443 11294 core-mono.cpp:26] 94.7791
+I0908 19:31:14.513718 11294 core-mono.cpp:26] 94.81
+I0908 19:31:15.568945 11294 core-mono.cpp:26] 94.7746
+W0908 19:31:15.773319 11294 main.cpp:8] Caught interrupt signal. Attempting to exit...

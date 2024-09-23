@@ -1,0 +1,24 @@
+# ninja log v6
+7936	8048	1726404059767313240	/home/zichun/1_SHU_Programming/SRM_training/rm-out/bin/libsrm_autoaim.so	9a5851f4f4f4db7e
+8048	8193	1726404059879326985	/home/zichun/1_SHU_Programming/SRM_training/rm-out/bin/libsrm_core.so	2a8818e84d22416f
+5	9658	1726404051836324519	CMakeFiles/vision-2024.dir/main.cpp.o	32ac0f096bdac71a
+4	7857	1726404051835324392	modules/core/CMakeFiles/srm_core.dir/src/core-base.cpp.o	d12ccfcbe2f02b39
+3	6202	1726404051834324266	modules/autoaim/CMakeFiles/srm_autoaim.dir/src/autoaim-armor.cpp.o	2cd25994b146fb32
+5	1962	1726404051836324519	modules/core/CMakeFiles/srm_core.dir/src/fps-controller.cpp.o	fa43a0b17d52537b
+8630	8894	1726390525047841650	/home/zichun/1_SHU_Programming/SRM_training/rm-out/bin/vision-2024	9fcbff13d1f3928
+3	7936	1726404051834324266	modules/autoaim/CMakeFiles/srm_autoaim.dir/src/detector-armor.cpp.o	65c8d9a90df7780c
+4	6273	1726404051835324392	modules/autoaim/CMakeFiles/srm_autoaim.dir/src/drawer.cpp.o	76e1a263a42ce1d6
+2	61	1726407032744342635	build.ninja	6bdb64535260bf76
+3	6198	1726404051834324266	modules/autoaim/CMakeFiles/srm_autoaim.dir/src/autoaim-base.cpp.o	6d3f5d575417a84e
+4	7851	1726404051835324392	modules/core/CMakeFiles/srm_core.dir/src/core-mono.cpp.o	9c4b2e4b7b1a2802
+5	1332	1726407038121029923	modules/core/CMakeFiles/srm_core.dir/src/fps-controller.cpp.o	2a9c0d91962d04b8
+4	6000	1726407038120029796	modules/autoaim/CMakeFiles/srm_autoaim.dir/src/autoaim-armor.cpp.o	dc8eb3211ef79b3
+5	6723	1726407038121029923	modules/autoaim/CMakeFiles/srm_autoaim.dir/src/drawer.cpp.o	8142f4617263807f
+5	7184	1726407038121029923	modules/core/CMakeFiles/srm_core.dir/src/core-mono.cpp.o	152071db4c096741
+4	8096	1726407038120029796	modules/autoaim/CMakeFiles/srm_autoaim.dir/src/autoaim-base.cpp.o	4f2297d4460d6b9b
+4	8477	1726407038120029796	modules/autoaim/CMakeFiles/srm_autoaim.dir/src/detector-armor.cpp.o	7dc07ebf225f131f
+5	8598	1726407038121029923	modules/core/CMakeFiles/srm_core.dir/src/core-base.cpp.o	cf8b4a351df89c2e
+8477	8607	1726407046593098901	/home/zichun/1_SHU_Programming/SRM_training/rm-out/bin/libsrm_autoaim.so	9f5678bfae96a9ba
+8607	8755	1726407046723115180	/home/zichun/1_SHU_Programming/SRM_training/rm-out/bin/libsrm_core.so	8aab1f27251c6b79
+5	8971	1726407038121029923	CMakeFiles/vision-2024.dir/main.cpp.o	e3ee2ce6ed9c1c88
+8971	9220	1726407047087160739	/home/zichun/1_SHU_Programming/SRM_training/rm-out/bin/vision-2024	6f576f517be66800

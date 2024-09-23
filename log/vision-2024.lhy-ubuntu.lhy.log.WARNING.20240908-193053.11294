@@ -1,0 +1,8 @@
+Log file created at: 2024/09/08 19:30:53
+Running on machine: lhy-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W0908 19:30:53.510977 11294 core-base.cpp:20] Waiting for the first frame frome video.
+W0908 19:30:56.487565 11294 core-mono.cpp:64] No sync data found.
+W0908 19:30:56.520476 11294 core-mono.cpp:66] The problem of no sync data found has been solved.
+W0908 19:31:13.016609 11294 core-mono.cpp:46] Waiting to get valid data.
+W0908 19:31:15.773319 11294 main.cpp:8] Caught interrupt signal. Attempting to exit...

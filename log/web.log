@@ -1,0 +1,11 @@
+[2024-09-16 00:10:35 +0800] [26156] [INFO] Starting gunicorn 23.0.0
+[2024-09-16 00:10:35 +0800] [26156] [INFO] Listening at: http://0.0.0.0:9003 (26156)
+[2024-09-16 00:10:35 +0800] [26156] [INFO] Using worker: sync
+[2024-09-16 00:10:35 +0800] [26204] [INFO] Booting worker with pid: 26204
+[2024-09-16 00:10:35 +0800] [26205] [INFO] Booting worker with pid: 26205
+[2024-09-16 00:14:08 +0800] [26205] [INFO] Worker exiting (pid: 26205)
+[2024-09-16 00:14:08 +0800] [26204] [INFO] Worker exiting (pid: 26204)
+[2024-09-16 00:14:08 +0800] [26156] [INFO] Handling signal: term
+[2024-09-16 00:14:08 +0800] [26156] [ERROR] Worker (pid:26205) was sent SIGTERM!
+[2024-09-16 00:14:08 +0800] [26156] [ERROR] Worker (pid:26204) was sent SIGTERM!
+[2024-09-16 00:14:08 +0800] [26156] [INFO] Shutting down: Master

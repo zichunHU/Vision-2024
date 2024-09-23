@@ -1,0 +1,11 @@
+/home/zichun/1_SHU_Programming/SRM_training/rm-out/cmake-build-debug/CMakeFiles/vision-2024.dir
+/home/zichun/1_SHU_Programming/SRM_training/rm-out/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/zichun/1_SHU_Programming/SRM_training/rm-out/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/zichun/1_SHU_Programming/SRM_training/rm-out/cmake-build-debug/modules/common/CMakeFiles/edit_cache.dir
+/home/zichun/1_SHU_Programming/SRM_training/rm-out/cmake-build-debug/modules/common/CMakeFiles/rebuild_cache.dir
+/home/zichun/1_SHU_Programming/SRM_training/rm-out/cmake-build-debug/modules/autoaim/CMakeFiles/srm_autoaim.dir
+/home/zichun/1_SHU_Programming/SRM_training/rm-out/cmake-build-debug/modules/autoaim/CMakeFiles/edit_cache.dir
+/home/zichun/1_SHU_Programming/SRM_training/rm-out/cmake-build-debug/modules/autoaim/CMakeFiles/rebuild_cache.dir
+/home/zichun/1_SHU_Programming/SRM_training/rm-out/cmake-build-debug/modules/core/CMakeFiles/srm_core.dir
+/home/zichun/1_SHU_Programming/SRM_training/rm-out/cmake-build-debug/modules/core/CMakeFiles/edit_cache.dir
+/home/zichun/1_SHU_Programming/SRM_training/rm-out/cmake-build-debug/modules/core/CMakeFiles/rebuild_cache.dir

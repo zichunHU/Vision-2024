@@ -1,0 +1,14 @@
+Log file created at: 2024/09/16 00:05:12
+Running on machine: hqm-HP-ZBook-Ubuntu-24-04
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E20240916 00:05:12.686906 25289 viewer-video.cpp:115] Failed to run python script, please check web log.
+E20240916 00:05:12.687528 25289 viewer-video.cpp:116] LOG:
+E20240916 00:05:12.687561 25289 viewer-video.cpp:117] [2024-09-16 00:05:11 +0800] [25312] [INFO] Starting gunicorn 23.0.0
+[2024-09-16 00:05:11 +0800] [25312] [ERROR] Connection in use: ('0.0.0.0', 9003)
+[2024-09-16 00:05:11 +0800] [25312] [ERROR] connection to ('0.0.0.0', 9003) failed: [Errno 98] Address already in use
+E20240916 00:05:12.687644 25289 autoaim-base.cpp:17] Failed to initialize viewer.
+E20240916 00:08:46.838086 25289 autoaim-armor.cpp:15] Failed to initialize autoaim for armor.
+E20240916 00:08:46.838129 25289 core-base.cpp:131] Failed to initialize autoaim.
+E20240916 00:08:46.838141 25289 core-base.cpp:164] Failed to initialize base core because of autoaim part.
+E20240916 00:08:46.838148 25289 main.cpp:32] Failed to initialize core.

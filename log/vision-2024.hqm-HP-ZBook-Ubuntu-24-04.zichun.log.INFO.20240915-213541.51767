@@ -1,0 +1,5 @@
+Log file created at: 2024/09/15 21:35:41
+Running on machine: hqm-HP-ZBook-Ubuntu-24-04
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20240915 21:35:41.794821 51767 reader-file.cpp:111] Initialized file video source.

@@ -1,0 +1,7 @@
+Log file created at: 2024/09/15 22:20:12
+Running on machine: hqm-HP-ZBook-Ubuntu-24-04
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E20240915 22:20:12.670979 58954 cuda-help.h:38] 6: The engine plan file is generated on an incompatible device, expecting compute 8.9 got compute 8.6, please rebuild.
+E20240915 22:20:12.730024 58954 cuda-help.h:38] 2: [engine.cpp::deserializeEngine::951] Error Code 2: Internal Error (Assertion engine->deserialize(start, size, allocator, runtime) failed. )
+E20240915 22:20:12.730913 58954 tensorrt.cpp:66] Build CUDA engine failed.

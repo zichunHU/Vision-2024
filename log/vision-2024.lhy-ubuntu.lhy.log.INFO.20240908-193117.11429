@@ -1,0 +1,30 @@
+Log file created at: 2024/09/08 19:31:17
+Running on machine: lhy-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0908 19:31:17.707124 11429 reader-file.cpp:111] Initialized file video source.
+W0908 19:31:17.707343 11429 core-base.cpp:20] Waiting for the first frame frome video.
+I0908 19:31:18.707553 11429 core-base.cpp:23] Reader is initialized successfully.
+I0908 19:31:18.707588 11429 core-base.cpp:32] Writer do not need initialization.
+I0908 19:31:18.707643 11429 core-base.cpp:92] Serial is initialized successfully.
+I0908 19:31:18.708251 11429 core-base.cpp:115] Solver is initialized successfully.
+I0908 19:31:19.956161 11429 autoaim-base.cpp:20] Viewer is initialized successfully.
+I0908 19:31:19.956471 11429 tensorrt.cpp:118] Engine will be built from cache.
+I0908 19:31:20.053118 11429 cuda-help.h:42] Loaded engine size: 25 MiB
+I0908 19:31:20.082655 11429 cuda-help.h:42] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +21, now: CPU 0, GPU 21 (MiB)
+I0908 19:31:20.087859 11429 cuda-help.h:42] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +17, now: CPU 0, GPU 38 (MiB)
+I0908 19:31:20.091811 11429 core-base.cpp:135] Autoaim is initialized successfully.
+I0908 19:31:20.091821 11429 core-base.cpp:168] Successfully initialized base environment of standard_3 controller.
+I0908 19:31:20.091846 11429 core-mono.cpp:26] 0.722764
+W0908 19:31:20.092168 11429 core-mono.cpp:64] No sync data found.
+W0908 19:31:20.124650 11429 core-mono.cpp:66] The problem of no sync data found has been solved.
+I0908 19:31:21.160465 11429 core-mono.cpp:26] 98.7502
+I0908 19:31:22.225580 11429 core-mono.cpp:26] 91.6602
+I0908 19:31:23.281602 11429 core-mono.cpp:26] 91.5152
+I0908 19:31:24.350478 11429 core-mono.cpp:26] 91.3452
+I0908 19:31:25.427803 11429 core-mono.cpp:26] 91.3148
+I0908 19:31:26.498886 11429 core-mono.cpp:26] 90.7811
+I0908 19:31:27.561744 11429 core-mono.cpp:26] 98.3395
+I0908 19:31:28.614228 11429 core-mono.cpp:26] 98.9921
+I0908 19:31:29.668699 11429 core-mono.cpp:26] 90.3978
+I0908 19:31:30.724867 11429 core-mono.cpp:26] 90.895
+W0908 19:31:31.703758 11429 main.cpp:8] Caught interrupt signal. Attempting to exit...

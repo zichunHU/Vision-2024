@@ -1,0 +1,14 @@
+Log file created at: 2024/09/15 22:16:56
+Running on machine: hqm-HP-ZBook-Ubuntu-24-04
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W20240915 22:16:56.376215 58185 core-base.cpp:20] Waiting for the first frame frome video.
+E20240915 22:16:58.439103 58185 viewer-video.cpp:115] Failed to run python script, please check web log.
+E20240915 22:16:58.447503 58185 viewer-video.cpp:116] LOG:
+E20240915 22:16:58.447536 58185 viewer-video.cpp:117] [2024-09-15 22:16:57 +0800] [58208] [INFO] Starting gunicorn 23.0.0
+[2024-09-15 22:16:57 +0800] [58208] [ERROR] Connection in use: ('0.0.0.0', 9003)
+[2024-09-15 22:16:57 +0800] [58208] [ERROR] connection to ('0.0.0.0', 9003) failed: [Errno 98] Address already in use
+E20240915 22:16:58.447597 58185 autoaim-base.cpp:17] Failed to initialize viewer.
+E20240915 22:16:59.967511 58185 cuda-help.h:38] 6: The engine plan file is generated on an incompatible device, expecting compute 8.9 got compute 8.6, please rebuild.
+E20240915 22:17:00.030797 58185 cuda-help.h:38] 2: [engine.cpp::deserializeEngine::951] Error Code 2: Internal Error (Assertion engine->deserialize(start, size, allocator, runtime) failed. )
+E20240915 22:17:00.031407 58185 tensorrt.cpp:66] Build CUDA engine failed.

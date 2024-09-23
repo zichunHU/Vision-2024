@@ -1,0 +1,11 @@
+Log file created at: 2024/09/15 21:33:22
+Running on machine: hqm-HP-ZBook-Ubuntu-24-04
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E20240915 21:33:22.258029 51088 viewer-video.cpp:115] Failed to run python script, please check web log.
+E20240915 21:33:22.258473 51088 viewer-video.cpp:116] LOG:
+E20240915 21:33:22.258502 51088 viewer-video.cpp:117] nohup: 无法运行命令 'gunicorn': 没有那个文件或目录
+E20240915 21:33:22.258553 51088 autoaim-base.cpp:17] Failed to initialize viewer.
+E20240915 21:33:23.826336 51088 cuda-help.h:38] 6: The engine plan file is generated on an incompatible device, expecting compute 8.9 got compute 8.6, please rebuild.
+E20240915 21:33:23.890964 51088 cuda-help.h:38] 2: [engine.cpp::deserializeEngine::951] Error Code 2: Internal Error (Assertion engine->deserialize(start, size, allocator, runtime) failed. )
+E20240915 21:33:23.892055 51088 tensorrt.cpp:66] Build CUDA engine failed.

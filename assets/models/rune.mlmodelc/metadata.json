@@ -1,0 +1,84 @@
+[
+  {
+    "shortDescription" : "Ultralytics YOLOv8s-pose model trained on rune.yaml",
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "var_1040",
+        "type" : "MultiArray"
+      }
+    ],
+    "version" : "8.0.83",
+    "modelParameters" : [
+
+    ],
+    "author" : "Ultralytics",
+    "specificationVersion" : 4,
+    "storagePrecision" : "Mixed (Float32, Int8)",
+    "license" : "AGPL-3.0 https:\/\/ultralytics.com\/license",
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.15",
+      "tvOS" : "13.0",
+      "watchOS" : "6.0",
+      "iOS" : "13.0",
+      "macCatalyst" : "13.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "inputSchema" : [
+      {
+        "height" : "640",
+        "colorspace" : "RGB",
+        "isOptional" : "0",
+        "width" : "640",
+        "isColor" : "1",
+        "formattedType" : "Image (Color 640 × 640)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "image"
+      }
+    ],
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "6.3.0",
+      "stride" : "32",
+      "com.github.apple.coremltools.source" : "torch==2.0.0",
+      "kpt_shape" : "[5, 2]",
+      "task" : "pose",
+      "imgsz" : "[640, 640]",
+      "batch" : "1",
+      "names" : "{0: 'blue_R', 1: 'blue_P', 2: 'blue_N', 3: 'red_R', 4: 'red_P', 5: 'red_N'}"
+    },
+    "generatedClassName" : "rune_s",
+    "neuralNetworkLayerTypeHistogram" : {
+      "AddBroadcastable" : 2,
+      "Concat" : 16,
+      "Scatter" : 2,
+      "Convolution" : 73,
+      "ActivationSigmoid" : 64,
+      "ReshapeStatic" : 14,
+      "LoadConstantND" : 6,
+      "MultiplyBroadcastable" : 3,
+      "Transpose" : 1,
+      "UpsampleNearestNeighbor" : 2,
+      "PoolingMax" : 3,
+      "Softmax" : 1,
+      "SplitND" : 10,
+      "Add" : 10,
+      "Multiply" : 66,
+      "ConcatND" : 4,
+      "ActivationLinear" : 2,
+      "Slice" : 2
+    },
+    "method" : "predict"
+  }
+]
