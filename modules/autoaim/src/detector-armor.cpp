@@ -24,7 +24,7 @@ bool ArmorDetector::Initialize() {
 bool ArmorDetector::Run(cv::Mat REF_IN image, ArmorPtrList REF_OUT armor_list) const {
   ///请补全
 
-  // 读取配置文件
+ // 读取配置文件
   std::string config_path = "config.toml";
   std::ifstream file(config_path);
   if (!file) {
@@ -77,7 +77,6 @@ bool ArmorDetector::Run(cv::Mat REF_IN image, ArmorPtrList REF_OUT armor_list) c
     //创建一个vector，用来返回信息
     armor_list.push_back(lamp);
   }
-
 
   return true;
 }
