@@ -52,6 +52,9 @@ bool ArmorDetector::Run(cv::Mat REF_IN image, ArmorPtrList REF_OUT armor_list) c
 
   for(const auto& obj : detections) {
     //置信度
+    if (obj.prob < 0.5) {
+      continue; // 如果置信度低于 0.5，则跳过
+    }
 
     //计算装甲板的四个角点
     cv::Point2f top_left(obj.x1, obj.y1);
