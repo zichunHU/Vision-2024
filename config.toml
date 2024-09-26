@@ -141,7 +141,7 @@ coreml = "../assets/models/small_ball.mlmodelc"
 tensorrt = "../assets/models/armor.onnx"
 class_num = 2
 point_num = 0
-target_color = "blue"  # 指定识别的颜色，可选值 "blue" 或 "orange"
+target_color = "blue"
 
 [nn.yolo.rune]
 coreml = "../assets/models/rune.mlmodelc"
