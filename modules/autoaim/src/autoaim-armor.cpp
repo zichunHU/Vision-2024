@@ -39,10 +39,19 @@ bool ArmorAutoaim::Run() {
   // 计算中心点
   cv::Point2f center = (armor->pts[0] + armor->pts[1] + armor->pts[2] + armor->pts[3]) * 0.25;
 
+  // 相机焦距
+  double fx =1.7766199808985457e+03;  ///来自从config.toml
+  // 目标的实际宽度
+  double actual_width = 45.0;
+  // 目标在图像中的像素宽度
+  double virtual_width = abs(armor->pts[0].x-armor->pts[1].x);
+  // 计算 z 值
+  double z = (fx * actual_width) / virtual_width;
+
   // 使用 Solver 类来转换坐标
   coord::Solver solver_trans;
   // 假设 solver 已经初始化并且相关参数已经设置
-  coord::CTVec cam_coords(center.x, center.y,0);
+  coord::CTVec cam_coords(center.x, center.y,z);
 
   // 获得一个在时空中绝对的坐标系
   coord::RMat rm_imu = rm_self_;
