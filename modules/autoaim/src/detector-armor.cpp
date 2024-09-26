@@ -24,6 +24,22 @@ bool ArmorDetector::Initialize() {
 bool ArmorDetector::Run(cv::Mat REF_IN image, ArmorPtrList REF_OUT armor_list) const {
   ///请补全
 
+  // 读取配置文件
+  std::string config_path = "config.toml";
+  std::ifstream file(config_path);
+  if (!file) {
+    std::cerr << "Unable to open config file: " << config_path << std::endl;
+    return false;
+  }
+
+  // 读取文件内容到字符串
+  std::stringstream buffer;
+  buffer << file.rdbuf();
+
+  // 使用 toml::parse 解析文件内容
+  auto config = toml::parse(buffer.str());
+  std::string target_color = toml::get<std::string>(config["target_color"]);
+
   //检查输入图像是否为空
   if (image.empty()) {
     LOG(ERROR) << "Input image is empty."; // 记录错误日志
@@ -32,7 +48,7 @@ bool ArmorDetector::Run(cv::Mat REF_IN image, ArmorPtrList REF_OUT armor_list) c
 
   //使用YOLO进行目标检测
   //运行神经网络检测
-   std::vector<srm::nn::Objects> detections = yolo_->Run(image);
+  std::vector<srm::nn::Objects> detections = yolo_->Run(image);
 
   for(const auto& obj : detections) {
     //置信度
@@ -46,12 +62,19 @@ bool ArmorDetector::Run(cv::Mat REF_IN image, ArmorPtrList REF_OUT armor_list) c
     //创建一个color对象，传入颜色
     Color lamp_color = (obj.cls == 0) ? Color::kBlue : Color::kRed;
 
+    // 只处理指定颜色的灯泡
+    if ((target_color == "blue" && lamp_color != Color::kBlue) ||
+        (target_color == "orange" && lamp_color != Color::kRed)) {
+      continue; // 如果颜色不匹配，跳过
+        }
+
     //智能指针，用来储存灯泡信息
     ArmorPtr lamp = std::make_shared<Armor>(std::array<cv::Point2f, 4> {top_left,top_right,bottom_left,bottom_right}, lamp_color);
 
     //创建一个vector，用来返回信息
     armor_list.push_back(lamp);
   }
+
 
   return true;
 }
