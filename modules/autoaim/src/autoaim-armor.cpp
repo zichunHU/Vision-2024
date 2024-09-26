@@ -54,6 +54,7 @@ bool ArmorAutoaim::Run() {
   // 计算偏航角和俯仰角
   yaw_ = atan2(static_cast<float>(world_coords(1)), static_cast<float>(world_coords(0)));
   pitch_ = atan2(static_cast<float>(world_coords(2)), xy_distance);
+
 #ifdef DEBUG
   viewer_->SendFrame(image_);
 #endif
