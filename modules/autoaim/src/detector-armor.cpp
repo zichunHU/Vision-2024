@@ -24,21 +24,38 @@ bool ArmorDetector::Initialize() {
 bool ArmorDetector::Run(cv::Mat REF_IN image, ArmorPtrList REF_OUT armor_list) const {
   ///请补全
 
- // 读取配置文件
-  std::string config_path = "config.toml";
-  std::ifstream file(config_path);
-  if (!file) {
-    std::cerr << "Unable to open config file: " << config_path << std::endl;
-    return false;
-  }
+ // 原始配置文件的路径
+    std::string config_path = "../config.toml";
 
-  // 读取文件内容到字符串
-  std::stringstream buffer;
-  buffer << file.rdbuf();
+    // 打开配置文件
+    std::ifstream file(config_path);
+    if (!file.is_open()) {
+        std::cerr << "Unable to open config file: " << config_path << std::endl;
+        return false;
+    }
 
-  // 使用 toml::parse 解析文件内容
-  auto config = toml::parse(buffer.str());
-  std::string target_color = toml::get<std::string>(config["target_color"]);
+    // 读取文件内容并查找 `target_color`
+    std::string line;
+    std::string target_color;
+    while (std::getline(file, line)) {
+        // 删除前后空格
+        line.erase(std::remove_if(line.begin(), line.end(), ::isspace), line.end());
+
+        // 查找包含 "target_color" 的行
+        if (line.find("target_color=") != std::string::npos) {
+            // 获取等号后的内容，去掉可能的引号
+            std::size_t pos = line.find("=");
+            target_color = line.substr(pos + 1);
+            target_color.erase(std::remove(target_color.begin(), target_color.end(), '"'), target_color.end());
+            break;  // 找到目标颜色后退出循环
+        }
+    }
+
+    // 如果没有找到 target_color，返回失败
+    if (target_color.empty()) {
+        std::cerr << "Error: target_color not found in config file" << std::endl;
+        return false;
+    }
 
   //检查输入图像是否为空
   if (image.empty()) {
