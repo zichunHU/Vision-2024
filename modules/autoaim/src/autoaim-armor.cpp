@@ -64,6 +64,12 @@ bool ArmorAutoaim::Run() {
   yaw_ = atan2(static_cast<float>(world_coords(1)), static_cast<float>(world_coords(0)));
   pitch_ = atan2(static_cast<float>(world_coords(2)), xy_distance);
 
+  /*
+  // 使用 Drawer 绘制装甲板和世界坐标点
+  drawer_->DrawArmor(armor);  // 绘制装甲板的边框和中心点
+  drawer_->DrawWorldPoint(world_coords);  // 绘制世界坐标点
+*/
+
 #ifdef DEBUG
   viewer_->SendFrame(image_);
 #endif
