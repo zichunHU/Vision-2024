@@ -42,33 +42,34 @@ bool ArmorAutoaim::Run() {
   // 相机焦距
   double fx =1.7766199808985457e+03;  ///来自从config.toml
   // 目标的实际宽度
-  double actual_width = 45.0;
+  double width_ac = 45.0;
   // 目标在图像中的像素宽度
-  double virtual_width = abs(armor->pts[0].x-armor->pts[1].x);
+  double width_vr = abs(armor->pts[0].x-armor->pts[1].x);
   // 计算 z 值
-  double z = (fx * actual_width) / virtual_width;
+  double z = (fx * width_ac) / width_vr;
 
   // 使用 Solver 类来转换坐标
   coord::Solver solver_trans;
   // 假设 solver 已经初始化并且相关参数已经设置
-  coord::CTVec cam_coords(center.x, center.y,z);
+  coord::CTVec cam_cd(center.x, center.y, z);
 
   // 获得一个在时空中绝对的坐标系
   coord::RMat rm_imu = rm_self_;
-  coord::CTVec world_coords = solver_trans.CamToWorld(cam_coords, rm_imu);
+  coord::CTVec world_cd = solver_trans.CamToWorld(cam_cd, rm_imu);
 
   /// 计算在 xy 平面上的距离
-  float xy_distance = sqrt(world_coords(0) * world_coords(0) + world_coords(1) * world_coords(1));
+  float xy_distance = sqrt(world_cd(0) * world_cd(0) + world_cd(1) * world_cd(1));
 
+/*
   // 计算偏航角和俯仰角
-  yaw_ = atan2(static_cast<float>(world_coords(1)), static_cast<float>(world_coords(0)));
-  pitch_ = atan2(static_cast<float>(world_coords(2)), xy_distance);
+  yaw_ = atan2(static_cast<float>(world_cd(1)), static_cast<float>(world_cd(0)));
+  pitch_ = atan2(static_cast<float>(world_cd(2)), xy_distance);
+*/
 
-  /*
   // 使用 Drawer 绘制装甲板和世界坐标点
   drawer_->DrawArmor(armor);  // 绘制装甲板的边框和中心点
-  drawer_->DrawWorldPoint(world_coords);  // 绘制世界坐标点
-*/
+  drawer_->DrawWorldPoint(world_cd);  // 绘制世界坐标点
+
 
 #ifdef DEBUG
   viewer_->SendFrame(image_);
